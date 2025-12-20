@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonne fête Ma Blonde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="petals" id="petalsContainer"></div>
+    
+    
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress" id="progressBar"></div>
+        </div>
+
+        <!-- Step 1: Greeting -->
+        <div class="step" id="step1">
+            <h1>Happy Birthday, Ma Blonde!</h1>
+            <p>I love you to the moon and back, puppy.</p>
+            <p>I made this little virtual card for you.</p>
+            <img src="./images/1.jpeg" style="height: 200px;width: 200px;" alt="">
+            <button class="btn" onclick="nextStep()">Open Your Gift</button>
+        </div>
+
+        <!-- Step 2: Name Input -->
+        <div class="step" id="step2">
+            <h2>Trick Question ;)</h2>
+            <p>What's the name of the most beautiful birthday girl in the world?</p>
+            <input type="text" class="name-input" id="nameInput" placeholder="Enter your name">
+            <button class="btn" onclick="saveName()">Continue</button>
+        </div>
+
+        <!-- Step 3: Heart Animation -->
+        <div class="step" id="step3">
+            <h2>For You, <span id="displayName">Ma Blonde</span></h2>
+            <p>Click on the heart!</p>
+            <div class="heart" id="interactiveHeart" onclick="createHearts()"></div>
+            <div id="heartMessage" class="message-box">
+                <p>I love you more than you can imagine, <span id="heartName">my love</span>.</p>
+            </div>
+            <button class="btn" onclick="nextStep()">Continue to Your Message</button>
+        </div>
+
+        <!-- Step 4: Birthday Message -->
+        <div class="step" id="step4">
+            <h2>For You Princess</h2>
+            <div class="photo-frame">
+                <!-- Replace with your image path -->
+                <img src="./images/2.jpeg"Beautiful You">
+            </div>
+            <div id="typedMessage" class="message-box">
+                <p class="typing-effect" id="typingText"></p>
+            </div>
+            <button class="btn" onclick="nextStep()">Continue</button>
+        </div>
+
+        <!-- Step 5: Memory Lane -->
+        <div class="step" id="step5">
+            <h2>My Favourite Moments of 24</h2>
+            <p>Here are a couple of my favourite moments from 24... Here's to many more</p>
+            <div class="memory-container">
+                <div class="polaroid">
+                    <img src="./images/3.jpeg" alt="Memory 1">
+                    <div class="polaroid-caption">Valentine's Day</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./images/4.jpeg" alt="Memory 2">
+                    <div class="polaroid-caption">Moving In</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./images/5.jpeg" alt="Memory 1">
+                    <div class="polaroid-caption">Pimple Popping</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./images/6.jpeg" alt="Memory 1">
+                    <div class="polaroid-caption">ATV Riding</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./images/7.jpeg" alt="Memory 1">
+                    <div class="polaroid-caption">Farming</div>
+                </div>
+                <div class="polaroid">
+                    <img src="./images/8.jpeg" alt="Memory 1">
+                    <div class="polaroid-caption">John Summit</div>
+                </div>
+            </div>
+            <button class="btn" onclick="nextStep()">Press Me :P</button>
+        </div>
+
+        <!-- Step 6: Final Wish -->
+        <div class="step" id="step6">
+            <h1>🎉 Happy Birthday, <span id="finalName">Ma Blonde 💖</span>! 🎂</h1>
+        
+            <p>✨ I hope that you have the most amazing day ever. ✨</p>
+            <p>🌟 I love you to the moon and back, Audrey. You make me so happy, and I am honored to share this special day with you. I wish you nothing but the best for 25.🌌</p>
+        
+            <p>⏳ Here's to so many more vacations, camping trips, concerts, and adventures. I love you Audrey. 🥰</p>
+        
+            <p>💌 With all my love, forever and always... 💫</p>
+        
+            <div class="signature">Ton Chum💋</div>
+        
+        </div>
+        
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
